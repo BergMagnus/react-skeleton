@@ -19669,14 +19669,14 @@ module.exports = require('./lib/React');
 var React = require('react');
 var ListItem = require('./ListItem.jsx');
 
-var ingredients = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "tomato" }];
+var testValue = [{ "id": 1, "text": "ham" }, { "id": 2, "text": "cheese" }, { "id": 3, "text": "tomato" }];
 
 var List = React.createClass({
     displayName: 'List',
 
     render: function () {
-        var listItem = ingredients.map(function (item) {
-            return React.createElement(ListItem, { key: item.id, ingredient: item.text });
+        var listItem = testValue.map(function (item) {
+            return React.createElement(ListItem, { key: item.id, itemvalue: item.text });
         });
 
         return React.createElement(
@@ -19701,7 +19701,7 @@ var ListItem = React.createClass({
             React.createElement(
                 'h4',
                 null,
-                this.props.ingredient
+                this.props.itemvalue
             )
         );
     }
@@ -19714,6 +19714,6 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 var List = require('./components/List.jsx');
 
-ReactDOM.render(React.createElement(List, null), document.getElementById('ingredients'));
+ReactDOM.render(React.createElement(List, null), document.getElementById('app'));
 
 },{"./components/List.jsx":168,"react":167,"react-dom":29}]},{},[170]);

@@ -1,0 +1,31 @@
+{
+  "name": "react-skeleton",
+  "version": "1.0.0",
+  "description": "React skeleton ",
+  "main": "index.js",
+  "scripts": {
+    "start": "watchify src/main.jsx -v -t [ babelify --presets [ react ] ] -o public/js/main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BergMagnus/react-skeleton.git"
+  },
+  "keywords": [
+    "react",
+    "skeleton"
+  ],
+  "author": "Magnus Berg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BergMagnus/react-skeleton/issues"
+  },
+  "homepage": "https://github.com/BergMagnus/react-skeleton#readme",
+  "dependencies": {
+    "babel-preset-react": "^6.5.0",
+    "babelify": "^7.3.0",
+    "react": "^15.1.0",
+    "react-dom": "^15.1.0",
+    "watchify": "^3.7.0"
+  }
+}

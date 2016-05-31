@@ -26,6 +26,7 @@
     "babelify": "^7.3.0",
     "react": "^15.1.0",
     "react-dom": "^15.1.0",
+    "react-router": "^2.4.1",
     "watchify": "^3.7.0"
   }
 }

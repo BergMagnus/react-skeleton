@@ -5,3 +5,9 @@ Following packages has been installed:
 - babel-preset-react
 - react 
 - react-dom
+- react-router
+
+
+
+--------
+- http-server
